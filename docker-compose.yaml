@@ -16,7 +16,7 @@ services:
       restart_policy:
         condition: on-failure
         max_attempts: 3
-    entrypoint: ./docker-entrypoint.sh
+    entrypoint: /app/docker-entrypoint.sh
     volumes:
       - ./docker-entrypoint.sh:/app/docker-entrypoint.sh
     env_file:
